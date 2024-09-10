@@ -1,7 +1,7 @@
 ﻿using Avalonia;
 using System;
 
-namespace BicycleSharingSystem_avaloniaTemplate;
+namespace BicycleSharingSystemavaloniaTemplate;
 
 sealed class Program
 {

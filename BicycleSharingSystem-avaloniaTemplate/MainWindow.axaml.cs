@@ -1,6 +1,6 @@
 using Avalonia.Controls;
 
-namespace BicycleSharingSystem_avaloniaTemplate;
+namespace BicycleSharingSystemavaloniaTemplate;
 
 public partial class MainWindow : Window
 {

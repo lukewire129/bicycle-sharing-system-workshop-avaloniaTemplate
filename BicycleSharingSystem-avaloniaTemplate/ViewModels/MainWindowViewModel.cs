@@ -1,4 +1,4 @@
-﻿namespace BicycleSharingSystem_avaloniaTemplate.ViewModels;
+﻿namespace BicycleSharingSystemavaloniaTemplate.ViewModels;
 
 public partial class MainWindowViewModel : ViewModelBase
 {

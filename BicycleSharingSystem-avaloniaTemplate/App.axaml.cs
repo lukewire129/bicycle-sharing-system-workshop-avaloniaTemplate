@@ -2,9 +2,9 @@ using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Data.Core.Plugins;
 using Avalonia.Markup.Xaml;
-using BicycleSharingSystem_avaloniaTemplate.ViewModels;
+using BicycleSharingSystemavaloniaTemplate.ViewModels;
 
-namespace BicycleSharingSystem_avaloniaTemplate;
+namespace BicycleSharingSystemavaloniaTemplate;
 
 public partial class App : Application
 {
