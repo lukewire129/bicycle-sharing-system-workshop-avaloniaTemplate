@@ -9,12 +9,10 @@
 
     <ItemGroup>
         <Folder Include="Components\" />
-        <Folder Include="Models\"/>
         <AvaloniaResource Include="Assets\**"/>
         <Folder Include="Pages\Bike\" />
         <Folder Include="Pages\Home\" />
         <Folder Include="Pages\RentalOffice\" />
-        <Folder Include="Views\" />
     </ItemGroup>
 
     <ItemGroup>
