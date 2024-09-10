@@ -13,6 +13,13 @@
 ## Assets
 1. BMW Logo.png
 
+## 앱 리소스
+```csharp
+<Application.Resources>
+    <SolidColorBrush x:Key="ColorBlack">#252525</SolidColorBrush>
+    <SolidColorBrush x:Key="ColorWhite">#D3D3D3</SolidColorBrush>
+</Application.Resources>
+```
 ## 폴더트리
 `Assets` 
 
@@ -32,3 +39,36 @@
  기존 -> Views/{화면이름}View.xaml
 
  변경 -> Pages/{화면이름}/Index.xaml 
+ 
+
+## ICON 라이브러리 사용하기 위해 수정
+```csharp
+using Avalonia;
+using System;
+using Projektanker.Icons.Avalonia;
+using Projektanker.Icons.Avalonia.MaterialDesign;
+
+namespace BicycleSharingSystemavaloniaTemplate;
+
+sealed class Program
+{
+    // Initialization code. Don't use any Avalonia, third-party APIs or any
+    // SynchronizationContext-reliant code before AppMain is called: things aren't initialized
+    // yet and stuff might break.
+    [STAThread]
+    public static void Main(string[] args) => BuildAvaloniaApp()
+        .StartWithClassicDesktopLifetime(args);
+
+    // Avalonia configuration, don't remove; also used by visual designer.
+    public static AppBuilder BuildAvaloniaApp()
+    {
+        IconProvider.Current
+            .Register<MaterialDesignIconProvider>();
+        
+        return AppBuilder.Configure<App>()
+            .UsePlatformDetect()
+            .WithInterFont()
+            .LogToTrace();
+    }
+}
+```
