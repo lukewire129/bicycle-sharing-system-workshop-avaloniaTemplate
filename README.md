@@ -28,7 +28,7 @@
 
 `Pages`
 
-&nbsp;&nbsp; &nbsp;&nbsp;ㄴ`Bike`
+&nbsp;&nbsp; &nbsp;&nbsp;ㄴ`Bicycle`
 
 &nbsp;&nbsp; &nbsp;&nbsp;ㄴ`Home`
 
