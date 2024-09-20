@@ -1,9 +1,9 @@
-## Template Donload
+# Template Donload
 ```
 dotnet new install BicycleSharingAvalonia.Template
 ```
-
-# Template 설정사항항
+---
+# Template 설정사항
 ## 프로젝트 설정
 1. `Avalonia .NET MVVM App` 템플릿 선택
 2. `고급설정` - `Usecompiled Bindings` 체크 X
