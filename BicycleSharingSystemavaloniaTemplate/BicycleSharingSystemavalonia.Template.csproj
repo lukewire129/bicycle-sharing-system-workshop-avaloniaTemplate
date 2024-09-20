@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PackageType>Template</PackageType>
+    <PackageVersion>1.0.2</PackageVersion>
+    <PackageId>BicycleSharingAvalonia.Template</PackageId>
+    <Title>BicycleSharingAvalonia Template</Title>
+    <Description>Templates for creating Avalonia applications and libraries.</Description>
+    <PackageTags>dotnet-new;templates;lukewire;Avalonia;BMW;KOREA</PackageTags>
+    <PackageProjectUrl>https://github.com/lukewire129/bicycle-sharing-system-workshop-avaloniaTemplate</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/lukewire129/bicycle-sharing-system-workshop-avaloniaTemplate.git</RepositoryUrl>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <ContentTargetFolders>content</ContentTargetFolders>
+    <NoDefaultExcludes>true</NoDefaultExcludes>
+    <NoPackageAnalysis>true</NoPackageAnalysis>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="templates\**\*" Exclude="templates\**\bin\**;templates\**\obj\**" />
+    <Compile Remove="**\*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="templates\BicycleSharingSystemAvaloniaTemplate\Components\.gitkeep" />
+    <None Remove="templates\BicycleSharingSystemAvaloniaTemplate\Pages\Bicycle\Components\.gitkeep" />
+    <None Remove="templates\BicycleSharingSystemAvaloniaTemplate\Pages\Home\Components\.gitkeep" />
+    <None Remove="templates\BicycleSharingSystemAvaloniaTemplate\Pages\RentalOffice\Components\.gitkeep" />
+    <None Remove="templates\BicycleSharingSystemAvaloniaTemplate\Pages\Bicycle\Index.axaml" />
+    <None Remove="templates\BicycleSharingSystemAvaloniaTemplate\Pages\Bicycle\Index.axaml.cs" />
+    <None Remove="templates\BicycleSharingSystemAvaloniaTemplate\Pages\Home\Index.axaml" />
+    <None Remove="templates\BicycleSharingSystemAvaloniaTemplate\Pages\Home\Index.axaml.cs" />
+    <None Remove="templates\BicycleSharingSystemAvaloniaTemplate\Pages\RentalOffice\Index.axaml" />
+    <None Remove="templates\BicycleSharingSystemAvaloniaTemplate\Pages\RentalOffice\Index.axaml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="templates\BicycleSharingSystemAvaloniaTemplate\Components\" />
+  </ItemGroup>
+
+</Project>

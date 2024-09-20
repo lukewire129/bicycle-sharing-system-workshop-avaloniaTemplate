@@ -3,7 +3,7 @@ using System;
 using Projektanker.Icons.Avalonia;
 using Projektanker.Icons.Avalonia.MaterialDesign;
 
-namespace BicycleSharingSystemavaloniaTemplate;
+namespace BicycleSharingSystemTemplate.avalonia;
 
 sealed class Program
 {

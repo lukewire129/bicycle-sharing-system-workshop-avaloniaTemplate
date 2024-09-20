@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Lukewire",
+  "description": "BMW WorkShop Avalonia Project Only Project",
+  "classifications": [ "Avalonia" ],
+  "identity": "BMW.BicycleSharingSystem.Avalonia",
+  "name": "BicycleSharingSystem Avalonia App",
+  "shortName": "BicycleSharingSystemAvaloniaTemplate",
+  "sourceName": "BicycleSharingSystemTemplate.avalonia",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  }
+}

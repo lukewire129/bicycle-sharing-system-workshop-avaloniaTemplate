@@ -1,9 +1,9 @@
 using System;
 using Avalonia.Controls;
 using Avalonia.Controls.Templates;
-using BicycleSharingSystemavaloniaTemplate.ViewModels;
+using BicycleSharingSystemTemplate.avalonia.ViewModels;
 
-namespace BicycleSharingSystemavaloniaTemplate;
+namespace BicycleSharingSystemTemplate.avalonia;
 
 public class ViewLocator : IDataTemplate
 {

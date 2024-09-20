@@ -1,6 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 
-namespace BicycleSharingSystemavaloniaTemplate.ViewModels;
+namespace BicycleSharingSystemTemplate.avalonia.ViewModels;
 
 public class ViewModelBase : ObservableObject
 {

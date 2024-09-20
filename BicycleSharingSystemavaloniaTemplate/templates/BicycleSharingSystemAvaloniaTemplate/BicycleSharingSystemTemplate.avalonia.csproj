@@ -9,8 +9,8 @@
 
     <ItemGroup>
         <Folder Include="Components\" />
-        <AvaloniaResource Include="Assets\**"/>
-        <Folder Include="Pages\Bike\" />
+        <AvaloniaResource Include="Assets\**" />
+        <Folder Include="Pages\Bicycle\" />
         <Folder Include="Pages\Home\" />
         <Folder Include="Pages\RentalOffice\" />
     </ItemGroup>
@@ -25,12 +25,5 @@
         <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
         <PackageReference Include="Projektanker.Icons.Avalonia" Version="9.4.0" />
         <PackageReference Include="Projektanker.Icons.Avalonia.MaterialDesign" Version="9.4.0" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Compile Update="MainWindow.axaml.cs">
-        <DependentUpon>MainWindow.axaml</DependentUpon>
-        <SubType>Code</SubType>
-      </Compile>
     </ItemGroup>
 </Project>
