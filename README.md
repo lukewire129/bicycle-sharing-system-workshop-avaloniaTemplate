@@ -17,6 +17,7 @@
 ```csharp
 <Application.Resources>
     <SolidColorBrush x:Key="ColorBlack">#252525</SolidColorBrush>
+    <SolidColorBrush x:Key="ColorRed">#fd5b5a</SolidColorBrush>
     <SolidColorBrush x:Key="ColorWhite">#D3D3D3</SolidColorBrush>
 </Application.Resources>
 ```
@@ -39,7 +40,32 @@
  기존 -> Views/{화면이름}View.xaml
 
  변경 -> Pages/{화면이름}/Index.xaml 
- 
+
+```xml
+public Control? Build(object? data)
+    {
+        if (data is null)
+            return null;
+        var pathName = data.GetType().Namespace!.Replace("ViewModel", "Page");
+        var folderName = data.GetType().Name!.Replace("ViewModel", "");
+        // var name = data.GetType().FullName!.Replace("ViewModel", "View", StringComparison.Ordinal);
+        var type = Type.GetType($"{pathName}.{folderName}.Index");
+
+        if (type != null)
+        {
+            var control = (Control)Activator.CreateInstance(type)!;
+            control.DataContext = data;
+            return control;
+        }
+        
+        return new TextBlock { Text = "Not Found: " + $"{pathName}.{folderName}.index" };
+    }
+
+    public bool Match(object? data)
+    {
+        return data is ViewModelBase;
+    }
+```
 
 ## ICON 라이브러리 사용하기 위해 수정
 ```csharp
