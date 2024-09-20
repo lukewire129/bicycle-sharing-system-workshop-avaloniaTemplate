@@ -14,7 +14,7 @@
 1. BMW Logo.png
 
 ## 앱 리소스
-```csharp
+```xml
 <Application.Resources>
     <SolidColorBrush x:Key="ColorBlack">#252525</SolidColorBrush>
     <SolidColorBrush x:Key="ColorRed">#fd5b5a</SolidColorBrush>
@@ -41,7 +41,7 @@
 
  변경 -> Pages/{화면이름}/Index.xaml 
 
-```xml
+```csharp
 public Control? Build(object? data)
     {
         if (data is null)
